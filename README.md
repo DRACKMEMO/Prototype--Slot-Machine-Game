@@ -8,6 +8,14 @@ The game is based on a classic 3-reel slot machine. The player starts with 100 c
 
 Each spin costs 10 credits. All three reels spin and stop one by one, showing randomly selected symbols. If all three reels show the same symbol, the player wins credits according to the payout table.
 
+## Play the Game
+
+**Play the WebGL version directly in your browser:**
+
+https://drackmemo.itch.io/slotmachineam
+
+The complete WebGL build is also included in the project's `Build/WebGL/` folder.
+
 ## Symbols
 
 - 7
@@ -75,15 +83,17 @@ The UI handles the spin button, lever, credit display and paytable.
 
 The `SlotMachineAudio` script manages the sound effects for button clicks, lever pulls, reel spinning, reel stopping and winning.
 
-## Running the WebGL Build
+## WebGL Build
 
-The WebGL build is available inside:
+The WebGL build is included in the project under:
 
 `Build/WebGL/`
 
-Unity WebGL games should be opened through a local or web server instead of directly through `file://`.
+You can also test the playable WebGL version directly through itch.io:
 
-You can use a local server to open the `index.html` file and play the game in a browser.
+https://drackmemo.itch.io/slotmachineam
+
+Unity WebGL games should be opened through a local or web server instead of directly through `file://`.
 
 ## Technologies Used
 
@@ -101,17 +111,17 @@ Slot-Machine-Game/
 │
 ├── Assets/
 ├── Build/
-├── Library/
-├── Logs/
+│   └── WebGL/
 ├── Packages/
 ├── ProjectSettings/
-├── Temp/
-├── UserSettings/
 │
+├── .gitignore
 ├── .vsconfig
-├── README
+├── README.md
 └── Slot Machine Game.sln
 ```
+
+**Note:** Unity-generated folders such as `Library`, `Logs`, `Temp` and `UserSettings` are excluded from the GitHub repository because Unity can regenerate them when the project is opened.
 
 ## Final Note
 
